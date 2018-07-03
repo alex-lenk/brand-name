@@ -1,0 +1,85 @@
+.top-panel {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #333;
+  color: #fff;
+  a {
+    color: inherit;
+  }
+}
+
+.top-panel__left::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 0;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.top-panel__phone {
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  a {
+    color: inherit;
+  }
+  .fas {
+    margin-right: 5px;
+    font-size: 15px;
+    transform: rotate(90deg);
+  }
+}
+
+.top-panel__search {
+  margin-left: 60px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.top-panel__search-field {
+  width: 100px;
+  background-color: transparent;
+  border: 0;
+  @include hidePlaceholder {
+    color: #fff;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  &:focus {
+    @include hidePlaceholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  }
+}
+
+.top-panel__search-button {
+  background-color: transparent;
+  border: 0;
+}
+
+.top-panel-login {
+  height: 32px;
+  line-height: 1;
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 0;
+    overflow: hidden;
+  }
+  a {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .far {
+    margin-left: 5px;
+    font-size: 16px;
+  }
+}
+
+@import "language-bar";

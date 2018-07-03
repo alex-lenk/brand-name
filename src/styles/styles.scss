@@ -6,12 +6,4 @@
 @import "common/form";
 @import "common/btn";
 /* blocks */
-@import "blocks/language-bar";
-
-.top-panel {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #333;
-  color: #fff;
-}
-
+@import "blocks/top-panel";

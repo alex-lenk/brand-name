@@ -1,0 +1,111 @@
+@import "variables";
+@import "mixin";
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  text-align: left;
+  line-height: 1.4;
+  color: #000;
+  background-color: #fff;
+  font-family: -apple-system, "Segoe UI", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+a, .as-link {
+  color: blue;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  &:hover {
+    color: #3260a4;
+  }
+}
+
+.as-link {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+b, strong {
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-top: 0;
+  font-family: inherit;
+  line-height: 1.2;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h1, .h1 {
+  margin-bottom: 70px;
+}
+
+.text {
+  &-center {
+    text-align: center
+  }
+  &-left {
+    text-align: left
+  }
+  &-right {
+    text-align: right
+  }
+  &-justify {
+    text-align: justify
+  }
+  &-bold {
+    font-weight: bold;
+  }
+  &-nowrap {
+    white-space: nowrap;
+  }
+  &-lowercase {
+    text-transform: lowercase;
+  }
+  &-uppercase {
+    text-transform: uppercase;
+  }
+  &-capitalize {
+    text-transform: capitalize;
+  }
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+button, input, select, textarea {
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+}

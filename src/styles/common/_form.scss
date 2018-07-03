@@ -1,0 +1,34 @@
+@import "mixin";
+@import "variables";
+
+.ui-placeholder {
+    @include hidePlaceholder {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+    &:focus {
+        @include hidePlaceholder {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    }
+}
+
+input::-webkit-contacts-auto-fill-button {
+    visibility: hidden;
+    display: none !important;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s; /* выставляется желаемая задержка */
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #dadada !important;
+}

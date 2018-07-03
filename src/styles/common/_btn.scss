@@ -1,0 +1,18 @@
+@import "variables";
+@import "mixin";
+
+.btn {
+    min-width: 135px;
+    padding: 0 10px;
+    background: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 1;
+    text-decoration: none;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}

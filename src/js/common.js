@@ -19,4 +19,16 @@ $(document).ready(function () {
     );
     /* END language-bar */
 
+
+    $( '#example3' ).sliderPro({
+        width: 960,
+        height: 500,
+        fade: true,
+        arrows: true,
+        buttons: false,
+        shuffle: true,
+        thumbnailArrows: true,
+        autoplay: false
+    });
+
 });

@@ -144,7 +144,7 @@
 
                 <div class="product-number number-plus-minus">
                     <input type="number" class="product-number__input" value="1" min="1" max="100">
-                    <button class="btn btn-green">
+                    <button class="btn btn-green" data-toggle="modal" data-target="#myModal">
                         <i class="fas fa-shopping-cart"></i>
                         В корзину
                     </button>
@@ -399,6 +399,78 @@
                     <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                 </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-top container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="footer-logo">
+                    <a href="#"><img src="img/logo.png" srcset="img/logo@2x.png 2x" alt=""></a>
+                </div>
+                <div class="footer-text">
+                    Мы являемся крупнейшим розничным продавцом смарт-гаджетов во всей России. Наш ассортимент
+                    варьируется от умных часов и фитнес-трекеров до умных кухонных приборов.
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-1">
+                <h5 class="footer-title">Информация</h5>
+                <ul class="footer-list list-unstyled">
+                    <li><a href="#">Каталог товаров</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 class="footer-title">О магазине</h5>
+                <ul class="footer-list list-unstyled">
+                    <li>Наш адрес:</li>
+                    <li>095111, Москва, Новый Арбат, 1с2</li>
+                    <li>8-800-2345-7892</li>
+                    <li><a href="mailto:brand_name@info.com">brand_name@info.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 class="footer-title">Подписывайтесь</h5>
+
+                <ul class="social list-unstyled">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2017  - Brand Name
+    </div>
+</footer>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Товар добавлен в корзину</h4>
+            </div>
+            <div class="modal-body clearfix">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/example/1047270_v01_b.jpg" alt="">
+                    </div>
+                    <div class="name-item-in-cart">НОУТБУК MSI GT72S 6QD DOMINATOR</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Продолжить покупки</button>
+                <button type="button" class="btn btn-green">Оформить заказ</button>
             </div>
         </div>
     </div>

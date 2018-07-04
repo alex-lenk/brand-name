@@ -20,7 +20,9 @@ $(document).ready(function () {
     /* END language-bar */
 
 
-    $( '#example3' ).sliderPro({
+    /* Begin Initializing the plugin sliderPro */
+
+    $('#example3').sliderPro({
         width: 960,
         height: 500,
         fade: true,
@@ -31,7 +33,23 @@ $(document).ready(function () {
         autoplay: false
     });
 
+    /* END language-bar */
+
+
+    /* Begin Initializing the plugin styler */
 
     $('select,.product-number__input').styler();
 
+    /* END Initializing the plugin */
+
+
+    /* Begin open-menu */
+
+    $('.menu-parent').click(
+        function () {
+            $(this).parent().toggleClass('open-menu');
+        }
+    );
+
+    /* END open-menu */
 });

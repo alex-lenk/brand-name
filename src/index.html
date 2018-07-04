@@ -2,6 +2,7 @@
 <html>
 <!-- include "template/head.html" -->
 <body>
+<!-- top-panel -->
 <div class="top-panel">
     <div class="container">
         <div class="row">
@@ -32,7 +33,9 @@
         </div>
     </div>
 </div>
+<!-- END top-panel -->
 
+<!-- header -->
 <header class="header">
     <div class="container">
         <div class="row">
@@ -45,8 +48,13 @@
                 <nav class="menu-wrap">
                     <div class="dropdown-toggle">dropdown-toggle</div>
                     <ul class="menu list-unstyled">
-                        <li class="menu-item menu-dropdown">
-                            <a href="#">Каталог товаров</a>
+                        <li class="menu-item menu-parent">
+                            <span>Каталог товаров</span>
+                            <ul class="menu-dropdown">
+                                <li><a href="#">Ноутбуки</a></li>
+                                <li><a href="#">Накопители</a></li>
+                                <li><a href="#">Мониторы</a></li>
+                            </ul>
                         </li>
                         <li class="menu-item"><a href="#">Оплата</a></li>
                         <li class="menu-item"><a href="#">Доставка</a></li>
@@ -60,12 +68,15 @@
         </div>
     </div>
 </header>
+<!-- END header -->
 
+<!-- breadcrumbs -->
 <ul class="breadcrumbs container">
     <li class="breadcrumbs-item"><a href="#">Главная</a></li>
     <li class="breadcrumbs-item"><a href="#">Компьютеры</a></li>
     <li class="breadcrumbs-item">Ноутбук MSI GT72S 6QD Dominator G</li>
 </ul>
+<!-- END breadcrumbs -->
 
 <div class="container">
     <div class="product-wrap">
@@ -404,6 +415,8 @@
     </div>
 </div>
 
+
+<!-- footer -->
 <footer class="footer">
     <div class="footer-top container">
         <div class="row">
@@ -450,7 +463,7 @@
         © 2017  - Brand Name
     </div>
 </footer>
-
+<!-- END footer -->
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -475,6 +488,7 @@
         </div>
     </div>
 </div>
+<!-- END Modal -->
 
 <!-- include "template/scripts.html" -->
 </body>

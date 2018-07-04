@@ -31,4 +31,7 @@ $(document).ready(function () {
         autoplay: false
     });
 
+
+    $('select,.product-number__input').styler();
+
 });

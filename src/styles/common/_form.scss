@@ -2,33 +2,42 @@
 @import "variables";
 
 .ui-placeholder {
+  @include hidePlaceholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  &:focus {
     @include hidePlaceholder {
-        opacity: 1;
-        transition: opacity 0.3s ease;
+      opacity: 0;
+      transition: opacity 0.3s ease;
     }
-    &:focus {
-        @include hidePlaceholder {
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-    }
+  }
+}
+
+.ui-field {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid $color_gray_light;
+  outline: none;
+  background: #fcfcfc;
+  color: #333;
 }
 
 input::-webkit-contacts-auto-fill-button {
-    visibility: hidden;
-    display: none !important;
-    pointer-events: none;
-    position: absolute;
-    right: 0;
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
 }
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    transition: background-color 5000s ease-in-out 0s; /* выставляется желаемая задержка */
+  transition: background-color 5000s ease-in-out 0s; /* выставляется желаемая задержка */
 }
 
 input:-webkit-autofill {
-    -webkit-text-fill-color: #dadada !important;
+  -webkit-text-fill-color: #dadada !important;
 }

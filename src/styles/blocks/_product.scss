@@ -91,8 +91,15 @@
   }
 }
 
-.product-number .jq-number__spin.minus:after {
-  display: none;
+.product-number {
+  .btn-green {
+    min-width: 135px;
+    margin-left: 10px;
+    font-weight: 600;
+  }
+  .jq-number__spin.minus:after {
+    display: none;
+  }
 }
 
 .product-info {

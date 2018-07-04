@@ -1,0 +1,78 @@
+.see-also .product-widget-content {
+  padding: 0;
+  @include clearfix;
+}
+
+.see-also-item {
+  padding: 20px 20px 30px;
+  text-align: center;
+  width: 25%;
+  float: left;
+  position: relative;
+  &:not(:last-child) {
+    border-right: 1px solid $color_gray_light;
+  }
+}
+
+.see-also-media {
+  margin-bottom: 15px;
+}
+
+.see-also-title {
+  font-size: 14px;
+  color: $color_green;
+  a:not(:hover) {
+    color: inherit;
+  }
+}
+
+.see-also-desc {
+  margin-top: 7px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #3f3e40;
+}
+
+.see-also-button {
+  width: 47px;
+  height: 47px;
+  margin-top: 30px;
+  border-radius: 50%;
+  border: 2px solid $color_orange;
+  background-color: $color_orange;
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.4s ease;
+  &:hover {
+    background-color: #fff;
+    color: $color_orange;
+  }
+}
+
+.see-also-hint {
+  padding: 5px 8px 8px;
+  line-height: 1;
+  border: 1px solid $color_gray_light;
+  background-color: #fff;
+  position: absolute;
+  left: 20px;
+  z-index: 20;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.see-also-sale {
+  color: $color_pink;
+  top: 20px;
+}
+
+.see-also-new {
+  font-weight: 600;
+  color: $color_green;
+  top: 55px;
+}
+
+.see-also-content {
+  top: 20px;
+  color: $color_gray;
+}
